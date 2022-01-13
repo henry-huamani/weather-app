@@ -1,4 +1,5 @@
 import React from "react";
+import Logo from "../logoHenry.png";
 
 export default class Card extends React.Component{
     render(){
@@ -11,7 +12,7 @@ export default class Card extends React.Component{
                         <h6>Min</h6>
                         <h6>Value</h6>
                     </div>
-                    <img src={`http://openweathermap.org/img/wn/${this.props.img}@2x.png`} alt="Icono del clima" />
+                    <img src={Logo} alt="Icono del clima" />
                     <div>
                         <h6>Max</h6>
                         <h6>Value</h6>
