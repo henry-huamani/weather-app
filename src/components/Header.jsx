@@ -16,7 +16,7 @@ export default class Header extends React.Component{
                     </div>
                 </Link>
                 <Link className={styles.active} to="/about">
-                    <h1>About</h1>
+                    <h1 className={styles.about}>About</h1>
                 </Link>
                 <SearchBar onSearch={onSearch}/>
             </div>

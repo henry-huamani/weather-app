@@ -5,3 +5,9 @@
     flex-wrap: wrap;
     height: 85vh;
 }
+
+@media (max-width:500px){
+    .contenedor{
+        font-size: 1rem !important;
+    }
+}

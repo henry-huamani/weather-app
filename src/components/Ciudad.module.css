@@ -34,3 +34,12 @@
     font-size: 1.2rem;
     font-weight: 500;
 }
+
+@media (max-width:500px){
+    .contenedor{
+        font-size: 1rem !important;
+    }
+    .bg{
+        width: 90%;
+    }
+}

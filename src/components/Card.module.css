@@ -12,6 +12,11 @@
     margin: 20px 0;
 }
 
+@media (max-width:500px){
+    .contenedor{
+        width: 300px;
+    }
+}
 .contenedor h4{
     font-size: 2rem;
     font-weight: 500;

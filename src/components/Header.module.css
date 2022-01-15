@@ -8,9 +8,25 @@
 
 .home{
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    width: 102%;
+}
+.home img{
+    margin-right: 5px;
+}
+
+@media (max-width:500px) {
+    .contenedor{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 30vh;
+    }
+    .home h1{
+        font-size: 1.2rem;
+    }
+    .about{
+        font-size: 1.2rem;
+    }
 }
 
 .active{

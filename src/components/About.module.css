@@ -5,6 +5,16 @@
     height: 86vh;
 }
 
+@media (max-width:500px){
+    .bg{
+        width: 90% !important;
+        height: 70% !important;
+    }
+    .bg div{
+        font-size: 1rem !important;
+    }
+}
+
 .bg{
     display: flex;
     flex-direction: column;
