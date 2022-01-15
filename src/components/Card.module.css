@@ -1,0 +1,48 @@
+.contenedor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 400px;
+    height: 200px;
+    padding: 10px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.23);
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
+    margin: 20px 0;
+}
+
+.contenedor h4{
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.contenedor div{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.contenedor div div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+}
+
+.contenedor div div h6{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.contenedor button{
+    width: 30px;
+    height: 30px;
+    align-self: flex-end;
+    background-color: black;
+    border: 2px solid black;
+    border-radius: 5px;
+    color: whitesmoke;
+    cursor: pointer;
+}

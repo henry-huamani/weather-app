@@ -1,0 +1,25 @@
+.contenedor{
+    display: flex;
+    align-items: center;
+}
+
+.input{
+    background: rgba(255, 255, 255, 0.23);    
+    border-radius: 5px;
+    padding: 5px;
+    margin: 2.5px;
+    border-style: none;
+    font-size: 1.5rem;
+    font-weight: 500;
+    z-index: 999;
+}
+.btn{
+    margin: 2.5px;
+    border: none;
+    padding: 5px;
+    background: black;
+    color: whitesmoke;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    cursor: pointer; 
+}
