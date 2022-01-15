@@ -1,6 +1,9 @@
 import React from 'react';
 import Header from './components/Header';
 import Cards from './components/Cards';
+import About from './components/About';
+import Ciudad from './components/Ciudad';
+import {Route, Switch} from 'react-router-dom';
 
 class App extends React.Component{
   constructor(props){
@@ -12,14 +15,19 @@ class App extends React.Component{
   };
 
   onSearch = (ciudad) => {
+    for(let i = 0; i < this.state.cities.length; i++){
+      if(this.state.cities[i].name === ciudad){
+        alert("Esta ciudad ya lo tienes agregado");
+        return;
+      }
+    }
     fetch(`http://api.openweathermap.org/data/2.5/weather?q=${ciudad}&appid=${this.apikey}&units=metric`)
     .then(response => response.json())
     .then(json => {
       if(json.main){
-        console.log(json.main);
         const ciudad = {
-          min: Math.round(json.main.temp_min),
-          max: Math.round(json.main.temp_max),
+          min: json.main.temp_min,
+          max: json.main.temp_max,
           img: json.weather[0].icon,
           id: json.id,
           wind: json.wind.speed,
@@ -37,7 +45,7 @@ class App extends React.Component{
       else{
         alert("Ciudad no encontrada");
       }
-    })
+    }) 
   }
   
   onClose = id => {
@@ -46,11 +54,38 @@ class App extends React.Component{
     })
   }
 
+  onFilter = ciudadId => {
+    //Aqui el la función parseInd es obligatorio para que la comparación sea verdadera
+    let city = this.state.cities.filter( c => c.id === parseInt(ciudadId));
+    if(city.length > 0){
+      return city[0];
+    }
+    else{
+      return null;
+    }
+  }
+
   render(){
     return (
       <div>
         <Header onSearch = {this.onSearch}/>
-        <Cards cities={this.state.cities} onClose={this.onClose}/>
+        <Switch>
+          <Route
+          exact
+          path="/"
+          render={() => <Cards cities={this.state.cities} onClose={this.onClose}/>}
+          />
+          <Route
+          exact
+          path="/about"
+          component={About}
+          />
+          <Route
+          exact
+          path="/ciudad/:ciudadId"
+          render={({match}) => <Ciudad city={this.onFilter(match.params.ciudadId)} />}
+          />
+        </Switch>
       </div>
     );
   }

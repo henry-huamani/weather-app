@@ -1,0 +1,36 @@
+.contenedor{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 86vh;
+}
+
+.bg{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.23);
+    padding: 10px 40px;
+    width: 50%;
+    height: 50%;
+}
+
+.bg h4{
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.bg div{
+    align-self: flex-start;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.bg div h6{
+    font-size: 1.2rem;
+    font-weight: 500;
+}

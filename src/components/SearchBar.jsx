@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./SearchBar.module.css";
-export default class SearchBar extends React.Component{
+
+class SearchBar extends React.Component{
     constructor(props){
         super(props);
         this.state = {
@@ -13,11 +14,13 @@ export default class SearchBar extends React.Component{
            <form className={styles.contenedor} onSubmit={e => {
                e.preventDefault();
                onSearch(this.state.city);
-               this.setState({city: ""})
-           }}>
+               this.setState({city: ""});
+               }}>
                <input value={this.state.city} onChange={e => {this.setState({city: e.target.value})}} className={styles.input} type="text" placeholder="Ciudad..." />
                <input className={styles.btn} type="submit" value="Agregar" />
            </form>
        ) 
     }
 }
+
+export default SearchBar;
