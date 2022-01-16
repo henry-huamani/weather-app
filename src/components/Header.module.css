@@ -12,6 +12,7 @@
         flex-direction: column;
         justify-content: space-between;
         height: 150px;
+        padding: 10px 10px;
     }
     .home{
         font-size: 1.2rem;
