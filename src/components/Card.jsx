@@ -16,7 +16,7 @@ export default class Card extends React.Component{
                         <h6>Min</h6>
                         <h6>{min} °C</h6>
                     </div>
-                    <img src={`http://openweathermap.org/img/wn/${img}@2x.png`} alt="Icono del clima" />
+                    <img src={`https://openweathermap.org/img/wn/${img}@2x.png`} alt="Icono del clima" />
                     <div>
                         <h6>Max</h6>
                         <h6>{max} °C</h6>
