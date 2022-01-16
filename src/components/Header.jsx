@@ -1,7 +1,6 @@
 import React from "react";
 import SearchBar from "./SearchBar";
 import styles from "./Header.module.css";
-import Logo from "../logoHenry.png";
 import { Link } from "react-router-dom";
 
 export default class Header extends React.Component{
@@ -10,10 +9,7 @@ export default class Header extends React.Component{
         return(
             <div className={styles.contenedor}>
                 <Link className={styles.active} to="/">
-                    <div className={styles.home}>
-                        <img src={Logo} alt="" />
-                        <h1>Henry - Weather App</h1>
-                    </div>
+                    <h1 className={styles.home}>Home</h1>
                 </Link>
                 <Link className={styles.active} to="/about">
                     <h1 className={styles.about}>About</h1>

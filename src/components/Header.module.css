@@ -1,17 +1,9 @@
 .contenedor{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     padding: 20px 10px;
     background: rgba(255, 255, 255, 0.23);
-}
-
-.home{
-    display: flex;
-    align-items: center;
-}
-.home img{
-    margin-right: 5px;
 }
 
 @media (max-width:500px) {
@@ -21,7 +13,7 @@
         justify-content: space-between;
         height: 30vh;
     }
-    .home h1{
+    .home{
         font-size: 1.2rem;
     }
     .about{
