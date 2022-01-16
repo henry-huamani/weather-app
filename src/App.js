@@ -21,7 +21,7 @@ class App extends React.Component{
         return;
       }
     }
-    fetch(`http://api.openweathermap.org/data/2.5/weather?q=${ciudad}&appid=${this.apikey}&units=metric`)
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${ciudad}&appid=${this.apikey}&units=metric`)
     .then(response => response.json())
     .then(json => {
       if(json.main){
