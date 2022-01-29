@@ -1,13 +1,12 @@
+/* Asi se importa un archivo css con css */
+@import "./normalize.css";
 
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+/* De esta manera se aplica el estilo a toda la aplicación (con el :root{}) */
+:root{
   font-family: Montserrat;
 }
+
 body {
   background: linear-gradient(360deg, #C75C2E 0%, #715C77 51.04%, #292A4E 100%);
   background-attachment: fixed;
 }
-
-
