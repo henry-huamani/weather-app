@@ -1,32 +1,16 @@
 .contenedor{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    padding: 20px 10px;
-    background: rgba(255, 255, 255, 0.23);
+    padding: 0 30px;
+    background: #C75C2E 0%;
 }
 
-@media (max-width:500px) {
-    .contenedor{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        height: 150px;
-        padding: 10px 10px;
-    }
-    .home{
-        font-size: 1.2rem;
-    }
-    .about{
-        font-size: 1.2rem;
-    }
-}
-
-.active{
-    color: black;
+.home, .about{
     text-decoration: none;
+    color: black;
 }
 
-.active:hover{
+.home:hover, .about:hover{
     color: whitesmoke;
 }

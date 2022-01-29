@@ -8,11 +8,11 @@ export default class Header extends React.Component{
         let {onSearch} = this.props;
         return(
             <div className={styles.contenedor}>
-                <Link className={styles.active} to="/">
-                    <h1 className={styles.home}>Home</h1>
+                <Link className={styles.home} to="/">
+                    <h1>Home</h1>
                 </Link>
-                <Link className={styles.active} to="/about">
-                    <h1 className={styles.about}>About</h1>
+                <Link className={styles.about} to="/about">
+                    <h1>About</h1>
                 </Link>
                 <SearchBar onSearch={onSearch}/>
             </div>
