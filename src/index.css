@@ -6,6 +6,13 @@
   font-family: Montserrat;
 }
 
+/* Esto lo hago por que normalize.css no le da margin 0 y padding 0 a muchos tags html como al h6 */
+/* Cuando pongo estas propiedades dentro de :root{}, la app no aplica estos valores, nose xq seguro no esta permitido. */
+*{
+  margin: 0;
+  padding: 0;
+}
+
 body {
   background: linear-gradient(360deg, #C75C2E 0%, #715C77 51.04%, #292A4E 100%);
   background-attachment: fixed;

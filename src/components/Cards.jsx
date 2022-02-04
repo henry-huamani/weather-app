@@ -21,8 +21,9 @@ export default class Cards extends React.Component{
         }
         else{
             return(
-                <div className={styles.contenedor} style={{fontSize: '2rem',
-                    fontWeight: 500}}>Aún no ha agregado ninguna ciudad</div>
+                <div className={styles.contenedorElse}>
+                    <h1 className={styles.elseh1}>Aún no ha agregado ninguna ciudad</h1>
+                </div>
             )
         }
     }
