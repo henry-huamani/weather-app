@@ -23,8 +23,9 @@ export default class Ciudad extends React.Component{
         }
         else{
             return(
-                <div className={styles.contenedor} style={{fontSize: '2rem',
-                fontWeight: 500}}>Ciudad no encontrada en tus agregados</div>
+                <div className={styles.contenedorElse}>
+                    <h1 className={styles.elseh1}>Ciudad no encontrada en tus agregados</h1>
+                </div>
             )
         }
     }

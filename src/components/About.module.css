@@ -2,17 +2,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 570px;
-}
-
-@media (max-width:500px){
-    .bg{
-        width: 90% !important;
-        height: 70% !important;
-    }
-    .bg div{
-        font-size: 1rem !important;
-    }
+    height: 36.5em;
+    background-color: rgb(0, 174, 255);
 }
 
 .bg{
@@ -21,13 +12,13 @@
     align-items: center;
     justify-content: space-evenly;
     border-radius: 8px;
-    background: rgba(255, 255, 255, 0.23);
-    padding: 10px 40px;
+    background: rgb(0, 174, 255);
+    padding: 0.5em 2em;
     width: 50%;
     height: 50%;
 }
 
 .bg div{
-    font-size: 1.2rem;
+    font-size: 1.2em;
     font-weight: 500;
 }
