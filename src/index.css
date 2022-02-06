@@ -1,13 +1,19 @@
+/* Asi se importa un archivo css con css */
+@import "./normalize.css";
 
+/* De esta manera se aplica el estilo a toda la aplicación (con el :root{}) */
+:root{
+  font-family: Montserrat;
+}
+
+/* Esto lo hago por que normalize.css no le da margin 0 y padding 0 a muchos tags html como al h6 */
+/* Cuando pongo estas propiedades dentro de :root{}, la app no aplica estos valores, nose xq seguro no esta permitido. */
 *{
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  font-family: Montserrat;
 }
+
 body {
   background: linear-gradient(360deg, #C75C2E 0%, #715C77 51.04%, #292A4E 100%);
   background-attachment: fixed;
 }
-
-

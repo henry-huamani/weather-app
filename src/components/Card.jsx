@@ -7,17 +7,17 @@ export default class Card extends React.Component{
         let {min, max, name, img, onClose, id} = this.props;
         return(
             <div className={styles.contenedor}>
-                <button onClick={onClose} >X</button>
+                <button className={styles.button} onClick={onClose} >X</button>
                 <NavLink className={styles.active} to={`/ciudad/${id}`}>
-                    <h4>{name}</h4>
+                    {name}
                 </NavLink>
-                <div>
-                    <div>
+                <div className={styles.contenedorDebajoDeCiudad}>
+                    <div className={styles.min}>
                         <h6>Min</h6>
                         <h6>{min} °C</h6>
                     </div>
                     <img src={`https://openweathermap.org/img/wn/${img}@2x.png`} alt="Icono del clima" />
-                    <div>
+                    <div className={styles.max}>
                         <h6>Max</h6>
                         <h6>{max} °C</h6>
                     </div>

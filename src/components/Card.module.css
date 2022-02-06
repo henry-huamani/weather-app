@@ -3,65 +3,63 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    width: 400px;
-    height: 200px;
+    width: 25em;
+    height: 12.5em;
     padding: 10px;
     border-radius: 8px;
     background: rgba(255, 255, 255, 0.23);
     box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
-    margin: 20px 0;
+    margin: 1.5em 0;
 }
 
-@media (max-width:500px){
-    .contenedor{
-        width: 300px;
-    }
-}
-.contenedor h4{
-    font-size: 2rem;
-    font-weight: 500;
-}
-
-.contenedor div{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-}
-
-.contenedor div div{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    height: 100%;
-}
-
-.contenedor div div h6{
-    font-size: 1.2rem;
-    font-weight: 500;
-}
-
-.contenedor button{
-    width: 30px;
-    height: 30px;
+.button{
     align-self: flex-end;
+    width: 1.8em;
+    height: 1.8em;
+    border-style: none;
+    border-radius: 0.3em;
+    font-size: 1em;
     background-color: black;
-    border: 2px solid black;
-    border-radius: 5px;
     color: whitesmoke;
     cursor: pointer;
-    font-size: 1rem;
 }
-.contenedor button:hover{
-    background: whitesmoke;
-    border: 2px solid whitesmoke;
+.button:hover{
+    background-color: whitesmoke;
     color: black;
 }
 
 .active{
-    color: black;
+    font-size: 2em;
     text-decoration: none;
+    color: black;
+    cursor: pointer;
 }
 .active:hover{
     color: whitesmoke;
+}
+
+.contenedorDebajoDeCiudad{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.min, .max{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.min h6, .max h6{
+    font-size: 1.2em;
+    font-weight: 500;
+} 
+
+@media (max-width: 500px){
+    .contenedor{
+        font-size: 11px;
+    }
 }
