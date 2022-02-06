@@ -9,9 +9,15 @@
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    height: 20em;
+    height: 20rem;
 }
 .elseh1{
     font-size: 2em;
     font-weight: 500;
+}
+
+@media (max-width: 500px){
+    .contenedorElse{
+        font-size: 9px;
+    }
 }
