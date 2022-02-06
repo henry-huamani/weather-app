@@ -2,7 +2,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 36.5em;
+    height: 36.5rem;
     background-color: rgb(0, 174, 255);
 }
 
@@ -21,4 +21,15 @@
 .bg div{
     font-size: 1.2em;
     font-weight: 500;
+}
+
+@media (max-width: 500px){
+    .contenedor{
+        height: 39.55rem;
+        font-size: 12px;
+    }
+    .bg{
+        width: 70%;
+        height: 40%;
+    }
 }
